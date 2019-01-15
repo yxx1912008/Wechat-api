@@ -5,8 +5,6 @@ import io.github.biezhi.wechat.exception.WeChatException;
 import java.io.InputStream;
 import java.util.Properties;
 
-import static io.github.biezhi.wechat.api.constant.Constant.*;
-
 /**
  * 微信API配置
  *
@@ -18,8 +16,8 @@ public class Config {
     /**
      * 资源存储的文件夹，包括图片、视频、音频
      */
-    private static final String CONF_ASSETS_DIR         = "wechat.assets-path";
-    private static final String CONF_ASSETS_DIR_DEFAULT = "assets";
+    private static final String CONF_ASSETS_DIR             = "wechat.assets-path";
+    private static final String CONF_ASSETS_DIR_DEFAULT     = "assets";
 
     /**
      * 是否输出二维码到终端
@@ -30,14 +28,14 @@ public class Config {
     /**
      * 自动回复消息，测试时用
      */
-    private static final String CONF_AUTO_REPLY         = "wechat.auto-reply";
-    private static final String CONF_AUTO_REPLY_DEFAULT = "false";
+    private static final String CONF_AUTO_REPLY             = "wechat.auto-reply";
+    private static final String CONF_AUTO_REPLY_DEFAULT     = "false";
 
     /**
      * 自动登录
      */
-    private static final String CONF_AUTO_LOGIN         = "wechat.auto-login";
-    private static final String CONF_AUTO_LOGIN_DEFAULT = "false";
+    private static final String CONF_AUTO_LOGIN             = "wechat.auto-login";
+    private static final String CONF_AUTO_LOGIN_DEFAULT     = "false";
 
     /**
      * 自动添加好友请求
@@ -45,7 +43,7 @@ public class Config {
     private static final String CONF_AUTO_ADDFRIEND         = "wechat.auto-addfriend";
     private static final String CONF_AUTO_ADDFRIEND_DEFAULT = "false";
 
-    private Properties props = new Properties();
+    private Properties          props                       = new Properties();
 
     public static Config me() {
         return new Config();
